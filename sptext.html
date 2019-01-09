@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="js/shopcart.js"></script>
+    <script>
+        var cart=new ShopCart();
+        cart.clearCart();
+        var product=new Product('01','林肯',12,'01.jpg');
+        //创一个商品
+        var order=new Order(product,2,true);
+        //创一个订单
+        var cart=new ShopCart();
+        //创一个购物车
+        cart.addToCart(order);
+        //把订单order放入购物车中
+        product=new Product('02','公园',12,'02.jpg');
+        //再次创一个商品
+        order=new Order(product,4,true);
+        //再次创一个订单
+        cart.addToCart(order);
+        //把新商品放入购物车中
+        product=new Product('03','幼儿园',16,'03.jpg');
+        order=new Order(product,6,true);
+        cart.addToCart(order);
+        console.log(cart.getDataFromLocalStorage());
+        console.log(cart.getSelectedQty());
+        console.log(cart.getSelectedAmount());
+        cart.setItemSelectStatus('04',true);
+    </script>
+</body>
+</html>

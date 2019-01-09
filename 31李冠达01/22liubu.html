@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的流布式</title>
+    <style>
+        .new{
+	width:100%;
+	height:530px;
+	background: #fff;
+}
+.new header{
+	width:385px;
+	height: 95px;
+	background: #f7f7f7;
+	border-radius: 48px;
+	margin:70px auto 0;
+	box-sizing:border-box;
+	padding:2px 0 0 35px;
+}
+.new p{
+	margin-top: 10px;
+	text-align: center;
+	color: #db0067;
+}
+.new ul{
+	margin:70px auto 0;
+	width: 960px;
+}
+.new ul li{
+	width:266px;
+	height:250px;
+	border:1px solid #ccc; 
+	background:url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2567628678,355740119&fm=26&gp=0.jpg) 0 0 no-repeat;
+	/* float: left; */
+	margin-right:8%;
+	margin-bottom: 40px;
+	position: relative;
+    overflow: hidden;
+}
+.new ul li:nth-child(2){
+    display: block;
+    background-size: 100%;
+    background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2567628678,355740119&fm=26&gp=0.jpg);}
+.new ul li:nth-child(3){
+    display: block;
+	margin-right: 0;
+	background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2567628678,355740119&fm=26&gp=0.jpg);
+background-position: center center;
+background-size: 100%;
+}
+.new ul li hgroup{
+	position: absolute;
+	left:0;
+	top:-250px;
+	width:266px;
+	height:250px;
+	background: rgba(0,0,0,0.5);
+	transition:all 0.5s ease-in 0s;
+}
+.new ul li:hover hgroup{
+	position: absolute;
+	left:0;
+	top:0;
+}
+.new ul li hgroup h2:nth-child(1){
+	font-size: 22px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 58px;
+}
+.new ul li hgroup h2:nth-child(2){
+	font-size: 14px;
+	text-align: center;
+	color:#fff;
+	font-weight: normal;
+	margin-top: 15px;
+}
+.new ul li hgroup h2:nth-child(3){
+	width:26px;
+	height: 26px;
+	margin-left: 120px;
+	margin-top: 15px;
+	background:url(images/jiantou.png) 0 0 no-repeat;
+}
+.new ul li hgroup h2:nth-child(4){
+	width:75px;
+	height: 22px;
+	margin-left: 95px;
+	margin-top: 25px;
+	background:url(images/anniu.png) 0 0 no-repeat;
+}
+@media all and (min-width:40em)
+ {
+    ul li
+    {
+    width:50%;
+    }
+    ul li
+    {
+    float:left;
+
+    }
+}
+@media all and (min-width:40em) and (max-width:60em) {
+    ul li:nth-child(2n+1) 
+    {
+    clear:both;
+}
+}
+@media all and (min-width:60em)
+{
+    ul li {
+    width:30%;
+}
+ul li:nth-child(3n+1) {
+    clear:both;
+}
+}
+    </style>
+</head>
+<body>
+        <div class="new">
+
+                <header>
+                        
+                    <img src="image/new.jpg" alt="">
+                    
+                </header>
+                
+                <p>Overwatch 英雄时刻 十佳战况</p>
+                <ul>
+                    <li>
+                        <hgroup>
+                            <h2>Bilibili</h2>
+                            <h2>哔哩哔哩</h2>
+                        </hgroup>
+                    </li>
+                    <li>
+                        <hgroup>
+                            <h2>bilibili</h2>
+                            <h2>哔哩哔哩动画</h2>
+                        </hgroup>
+                    </li>
+                    <li>
+                        <hgroup>
+                            <h2>欧莱雅</h2>
+                            <h2>爽肤水领导者</h2>>
+                        </hgroup>
+                    </li>
+                </ul>
+            </div>
+</body>
+</html>
